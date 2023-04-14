@@ -231,6 +231,15 @@ header {
     margin: 50px auto;
 }
 
+.quarta-sezione .column-40 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quarta-sezione h2 {
+    margin-bottom: 15px;
+}
 /* quinta sezione */
 
 .container-quinta-sezione {
