@@ -13,14 +13,15 @@ body {
 .row {
     display: flex;
     flex-direction: row;   
-    width: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
 .column-20 {
     display: flex;
     width: 20%;
     height: 100%;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .column-30 {
@@ -41,7 +42,7 @@ body {
     display: flex;
     width: 60%;
     height: 100%;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .column-100 {
@@ -49,6 +50,17 @@ body {
     width: 100%;
     height: 100%;
     border: 1px dashed black;
+}
+
+button {
+    color: black;
+    padding: 10px 12px;
+    border-radius: 45%;
+}
+
+button.nero {
+    background-color: black;
+    color: white;
 }
 
 .bg-blue {
@@ -66,16 +78,17 @@ body {
 /* sezione header */
 
 header {
-    background-color: rgb(173, 216, 230);
+    background-color: rgb(49, 97, 224);
     display: flex;
+    color: white;
 }
 
 .container-header {
     display: flex;
-    width: 60%;
+    width: 75%;
     margin: 10px auto;
-    height: 40px;
-    background-color: rgb(218, 165, 32)
+    /* height: 40px; */
+    /* background-color: rgb(218, 165, 32) */
 }
 
 .column-60-header {
@@ -97,7 +110,7 @@ header {
 }
 
 .logo-header {
-    margin-left: 10px;
+    padding: 5px 10px;
 }
 
 .login-header {
@@ -105,24 +118,35 @@ header {
 }
 
 .link-header {
-    margin: 0px 5px;
+    margin: 0px 15px;
 }
 
 /* prima sezione */
 
 .container-prima-sezione {
-    background-color: rgb(0, 0, 139);
+    /* background-color: rgb(0, 0, 139); */
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 500px;
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .prima-sezione {
-    display: flex;
+    /* display: flex; */
     width: 50%;
-    height: 400px;
-    background-color: rgb(238, 130, 238);
-    margin: 50px auto;
+    /* height: 400px; */
+    /* background-color: rgb(238, 130, 238); */
+    margin: 100px auto;
+}
+
+.column-prima-sezione {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
 }
 
 /* seconda sezione */
