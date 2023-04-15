@@ -35,7 +35,7 @@ body {
     /* display: flex; */
     width: 40%;
     height: 100%;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .column-60 {
@@ -49,7 +49,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 button {
@@ -61,6 +61,10 @@ button {
 button.nero {
     background-color: black;
     color: white;
+}
+
+button.viola {
+    background-color: rgb(142, 161, 225);
 }
 
 .bg-blue {
@@ -100,6 +104,11 @@ p {
     background-image: url(../img/wave.svg);
     background-size: cover;
     height: 100px;
+}
+
+.rotate-90 {
+    display: inline-block;
+    transform: rotate(90deg);
 }
 
 /* sezione header */
@@ -259,7 +268,7 @@ header {
     display: flex;
     height: 1200px;
     width: 100%;
-    background-color: rgb(211, 211, 211);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .quinta-sezione {
@@ -284,13 +293,18 @@ header {
 .stelline {
     width: 60%;
     height: 10%;
-    text-align: center;
     background-image: url(../img/stars.svg);
-    background-size: 180%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stelline h3 {
     margin: auto;
+    padding: 10px;
+    font-size: 25px;
 }
 
 /* sesta sezione */
@@ -304,17 +318,56 @@ header {
 
 .sesta-sezione {
     display: flex;
-    width: 60%;
+    width: 70%;
     height: 500px;
     margin: 50px auto;
+    border-bottom: 1px solid rgb(114, 137, 218);
 }
 
 .column-piccola-sesta {
     display: flex;
+    flex-direction: column;
     width: calc(70% / 4);
     height: 100%;
     border: 1px dashed white;
     background-color: rgb(32, 178, 170);
+}
+
+.sesta-sezione .column-30 {
+    flex-direction: column;
+}
+
+.sesta-sezione .column-30 img {
+    width: 8%;
+}
+
+.sesta-sezione span {
+    margin: 10px 0;
+    color: white;
+}
+
+.sesta-sezione h3 {
+    font-size: 30px;
+    color: rgb(114, 137, 218);
+}
+
+.sesta-sezione h6 {
+    font-size: 18px;
+    color: rgb(114, 137, 218);
+}
+
+.icone-social i {
+    margin: 0 15px 0 0;
+}
+
+.column-piccola-sesta ul {
+    list-style: none;
+    color: white;
+    font-size: 15px;
+}
+
+.column-piccola-sesta li {
+    margin: 8px 0;
 }
 
 /* sezione footer */
