@@ -21,35 +21,29 @@ body {
     display: flex;
     width: 20%;
     height: 100%;
-    /* border: 1px dashed black; */
 }
 
 .column-30 {
     display: flex;
     width: 30%;
     height: 100%;
-    border: 1px dashed black;
 }
 
 .column-40 {
-    /* display: flex; */
     width: 40%;
     height: 100%;
-    /* border: 1px dashed black; */
 }
 
 .column-60 {
     display: flex;
     width: 60%;
     height: 100%;
-    /* border: 1px dashed black; */
 }
 
 .column-100 {
     display: flex;
     width: 100%;
     height: 100%;
-    /* border: 1px dashed black; */
 }
 
 button {
@@ -65,18 +59,6 @@ button.nero {
 
 button.viola {
     background-color: rgb(142, 161, 225);
-}
-
-.bg-blue {
-    background-color: rgb(30, 144, 255);
-}
-
-.bg-pink {
-    background-color: rgb(255, 192, 203);
-}
-
-.bg-salmone {
-    background-color: rgb(240, 128, 128);
 }
 
 img {
@@ -123,8 +105,6 @@ header {
     display: flex;
     width: 75%;
     margin: 10px auto;
-    /* height: 40px; */
-    /* background-color: rgb(218, 165, 32) */
 }
 
 .column-60-header {
@@ -160,7 +140,6 @@ header {
 /* prima sezione */
 
 .container-prima-sezione {
-    /* background-color: rgb(0, 0, 139); */
     background-image: url(../img/jumbo.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -171,10 +150,7 @@ header {
 }
 
 .prima-sezione {
-    /* display: flex; */
     width: 50%;
-    /* height: 400px; */
-    /* background-color: rgb(238, 130, 238); */
     margin: 50px auto 100px;
 }
 
@@ -193,15 +169,13 @@ header {
 
 .container-seconda-sezione {
     display: flex;
-    /* height: 600px; */
     width: 100%;
 }
 
 .seconda-sezione {
     display: flex;
-    width: 60%;
-    /* height: 500px; */
-    margin: 0px auto;
+    width: 70%;
+    margin: 0px auto 50px auto;
 }
 
 .seconda-sezione p {
@@ -209,7 +183,11 @@ header {
 }
 
 .seconda-sezione h2 {
-    margin-top: 120px;
+    margin-top: 80px;
+}
+
+.seconda-sezione .column-40 {
+    margin-left: 50px;
 }
 
 /* terza sezione */
@@ -223,7 +201,7 @@ header {
 
 .terza-sezione {
     display: flex;
-    width: 60%;
+    width: 70%;
     height: 500px;
     margin: 50px auto;
 }
@@ -232,6 +210,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 40px;
+}
+
+.terza-sezione .column-60 {
+    margin: 0 40px;
 }
 
 .terza-sezione h2 {
@@ -248,7 +231,7 @@ header {
 
 .quarta-sezione {
     display: flex;
-    width: 60%;
+    width: 70%;
     height: 500px;
     margin: 50px auto;
 }
@@ -257,6 +240,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 40px;
+}
+
+.quarta-sezione .column-60 {
+    margin: 0 40px;
 }
 
 .quarta-sezione h2 {
@@ -266,7 +254,6 @@ header {
 
 .container-quinta-sezione {
     display: flex;
-    height: 1200px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -274,8 +261,6 @@ header {
 .quinta-sezione {
     display: flex;
     width: 70%;
-    height: 1100px;
-    background-color: rgb(34, 139, 34);
     margin: 50px auto;
 }
 
@@ -284,10 +269,15 @@ header {
     align-items: center;
 }
 
+.quinta-sezione h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
 .quinta-sezione p {
-    width: 80%;
+    width: 90%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .stelline {
@@ -299,6 +289,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .stelline h3 {
@@ -311,7 +302,6 @@ header {
 
 .container-sesta-sezione {
     display: flex;
-    height: 600px;
     width: 100%;
     background-color: rgb(35, 39, 42);
 }
@@ -319,8 +309,7 @@ header {
 .sesta-sezione {
     display: flex;
     width: 70%;
-    height: 500px;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     border-bottom: 1px solid rgb(114, 137, 218);
 }
 
@@ -329,8 +318,6 @@ header {
     flex-direction: column;
     width: calc(70% / 4);
     height: 100%;
-    border: 1px dashed white;
-    background-color: rgb(32, 178, 170);
 }
 
 .sesta-sezione .column-30 {
@@ -375,26 +362,23 @@ header {
 footer {
     display: flex;
     background-color: rgb(35, 39, 42);
-    height: 100px;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .container-footer {
     display: flex;
-    width: 60%;
-    height: 80px;
-    background-color: rgb(127, 255, 212);
+    width: 70%;
+    padding-bottom: 50px;
 }
 
 .column-footer {
     border: none;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-.logo-footer, .bottone-footer {
-    background-color: rgb(255, 182, 193);
-    border: 1px dashed black;
-    padding: 5px;
+.bottone-footer {
+    color: white;
 }
